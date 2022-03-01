@@ -60,7 +60,7 @@ Actual time needed to complete: 3 hours
 
 Name of feature: Storage
 
-Estimate of time needed to complete: 1 hour
+Estimate of time needed to complete: 1 hourt s
 
 Start time: 7:00 p.m.
 
