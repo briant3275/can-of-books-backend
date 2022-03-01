@@ -26,7 +26,9 @@ Clone this repo to your own account with the green "Use this template" button. T
 ## Change Log
 Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-02-28-2022 4:59pm - Completed Repository setup
+02-28-2022 7:00pm - Completed Repository setup
+
+02-28-2022 8:55pm - Completed Storage setup
 
 ## Estimates
 
@@ -53,6 +55,16 @@ Resume Time: 6:30 p.m.
 Finish time: 7:00 p.m.
 
 Actual time needed to complete: 3 hours
+
+Name of feature: Storage
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 7:00 p.m.
+
+Finish time: 8:55 p.m.
+
+Actual time needed to complete: 1 hour 55 minutes
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
