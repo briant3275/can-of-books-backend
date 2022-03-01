@@ -28,7 +28,9 @@ Use this area to document the iterative changes made to your application as each
 
 02-28-2022 7:00pm - Completed Repository setup
 
-02-28-2022 8:55pm - Completed Storage setup
+02-28-2022 8:55pm - Completed Storage
+
+02-28-2022 10:55pm - Book component in progress
 
 ## Estimates
 
@@ -66,10 +68,27 @@ Finish time: 8:55 p.m.
 
 Actual time needed to complete: 1 hour 55 minutes
 
+Name of feature: Book component
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 9:00 p.m.
+
+Pause time: 10:05 p.m.
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 TA Justin Hammerly helped with back-end deployment on Heroku
+
+TA Kassie Bradshaw helped with connecting database
+
+Tanner Percival helped with connecting database
 
 ## Process: Professional Pairing Practice
 
