@@ -1,6 +1,6 @@
 # Project Name "Can of Books"
 
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.8.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 **Author**: Brian Thornburg, Harvey Francois, Rey Mercado
 
@@ -31,6 +31,8 @@ Use this area to document the iterative changes made to your application as each
 02-28-2022 8:55pm - Completed Storage
 
 02-28-2022 10:55pm - Book component in progress
+
+03-01-2022 7:55pm - Book component complete
 
 ## Estimates
 
@@ -76,19 +78,26 @@ Start time: 9:00 p.m.
 
 Pause time: 10:05 p.m.
 
-Finish time: _____
+Continue time: 2:00 p.m. 03-01-2022
 
-Actual time needed to complete: _____
+Pause time: 5:00 p.m.
 
+Continue time: 6:30 p.m.
+
+Finish time: 7:55 p.m.
+
+Actual time needed to complete: 5 hours 30 minutes
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-TA Justin Hammerly helped with back-end deployment on Heroku
+TA Justin Hammerly helped with back-end deployment on Heroku 2-28-2022
 
-TA Kassie Bradshaw helped with connecting database
+TA Kassie Bradshaw helped with connecting database 2-28-2022
 
-Tanner Percival helped with connecting database
+Tanner Percival helped with connecting database 2-28-2022
+
+Ryan Gallaway helped with rendering carousel and made today's code review available in class repo 3-01-2022
 
 ## Process: Professional Pairing Practice
 
