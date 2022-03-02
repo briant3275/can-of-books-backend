@@ -1,10 +1,20 @@
 # Project Name "Can of Books"
 
+### Lab 12
+
+(https://trello.com/b/LFy4MWG2/book-lab)
+
 **Version**: 1.8.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 **Author**: Brian Thornburg, Harvey Francois, Rey Mercado
 
 ## Overview
+Today you will add the functionality for the user to create a book resource in the database or delete one. A book will be created from a form in React, and sent to the server where it will be saved into the database, and then returned to the front end to be displayed in the list of favorite books. You will then be able to delete that book with a click of a button, to have it instantly removed from the front end, with a request sent to back end for removal.
+
+Feature Tasks - CREATE and DELETE of CRUD
+See your team’s Trello board for this lab’s feature tasks.
+
+ 
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 This repository has starter code to begin work on creating your own online bookshelf.
@@ -26,78 +36,26 @@ Clone this repo to your own account with the green "Use this template" button. T
 ## Change Log
 Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-02-28-2022 7:00pm - Completed Repository setup
-
-02-28-2022 8:55pm - Completed Storage
-
-02-28-2022 10:55pm - Book component in progress
-
-03-01-2022 7:55pm - Book component complete
+03-01-2022 10:15pm - Change feature in progress.
 
 ## Estimates
 
-Name of feature: ________________________________
+Name of feature: create 
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 2hr
 
-Start time: _____
+Start time: 8pm
 
-Finish time: _____
+Pause time: 10:15pm
 
-Actual time needed to complete: _____
-
-Name of feature: Setup
-
-Estimate of time needed to complete: 4 hours
-
-Start time: 2:00 p.m.
-
-Pause Time: 4:30 p.m.
-
-Resume Time: 6:30 p.m.
-
-Finish time: 7:00 p.m.
-
-Actual time needed to complete: 3 hours
-
-Name of feature: Storage
-
-Estimate of time needed to complete: 1 hourt s
-
-Start time: 7:00 p.m.
-
-Finish time: 8:55 p.m.
-
-Actual time needed to complete: 1 hour 55 minutes
-
-Name of feature: Book component
-
-Estimate of time needed to complete: 1 hour
-
-Start time: 9:00 p.m.
-
-Pause time: 10:05 p.m.
-
-Continue time: 2:00 p.m. 03-01-2022
-
-Pause time: 5:00 p.m.
-
-Continue time: 6:30 p.m.
-
-Finish time: 7:55 p.m.
-
-Actual time needed to complete: 5 hours 30 minutes
+Actual time needed to complete: tbd
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-TA Justin Hammerly helped with back-end deployment on Heroku 2-28-2022
+Matt Rangel - Helped debug feature one create.
 
-TA Kassie Bradshaw helped with connecting database 2-28-2022
-
-Tanner Percival helped with connecting database 2-28-2022
-
-Ryan Gallaway helped with rendering carousel and made today's code review available in class repo 3-01-2022
+Ryan Gallaway Helped us focus on more essential tasks in lab twelve.
 
 ## Process: Professional Pairing Practice
 
