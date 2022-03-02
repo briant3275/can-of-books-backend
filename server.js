@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 
 // must bring in a schema IF we want to interact with that model
 const Book = require('./models/book.js');
+const { response } = require('express');
 
 //connect Mongoose to our MongoDB
 mongoose.connect(process.env.DB_URL);
@@ -23,6 +24,7 @@ db.once('open', function () {
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 3002;
 
@@ -31,6 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/books', getBooks);
+app.post('/books', postBooks);
 
 async function getBooks(req, res, next) {
   try {
@@ -46,6 +49,19 @@ async function getBooks(req, res, next) {
     console.log('results', results);
   } catch(error){
     console.log('error', error);
+    next(error);
+  }
+}
+
+async function postBooks(req, res, next) {
+
+  console.log(req.body, 'here is body');
+  try{
+    let createdBook = await Book.create(req.body);
+    res.status(200).send(createdBook);
+  }
+
+  catch(error){
     next(error);
   }
 }
