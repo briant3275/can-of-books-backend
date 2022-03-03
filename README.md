@@ -37,6 +37,7 @@ Clone this repo to your own account with the green "Use this template" button. T
 Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 03-01-2022 10:15pm - Change feature in progress.
+03-02-2022 8:45p - Change feature complete. began work on Delete feature.
 
 ## Estimates
 
@@ -47,15 +48,23 @@ Estimate of time needed to complete: 2hr
 Start time: 8pm
 
 Pause time: 10:15pm
+Continue time: 2pm March 2
+Pause time: 4pm March 2
+Continue time: 7pm March 2
+End time: 845pm March 2
+Actual time needed to complete: 2.25 + 2 + 1.75 = 6hrs
 
-Actual time needed to complete: tbd
+Name of feature: Delete
+Estimate of time needed to complete: 2hrs
+Start time: 8:45pm March2
+End time: 9:50pm march2
+Actual time:1hr 5min
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-Matt Rangel - Helped debug feature one create.
-
-Ryan Gallaway Helped us focus on more essential tasks in lab twelve.
+Ryan Callaway: helped debug eslinter issues
+Cassie Bradshaw: helped debug error in the bootstrap Form.Check component
 
 ## Process: Professional Pairing Practice
 
