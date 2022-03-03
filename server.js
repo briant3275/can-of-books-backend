@@ -34,6 +34,7 @@ app.get('/', (req, res) => {
 
 app.get('/books', getBooks);
 app.post('/books', postBooks);
+app.delete('/books', deleteBooks); //1:28 March 2
 
 async function getBooks(req, res, next) {
   try {
@@ -46,7 +47,7 @@ async function getBooks(req, res, next) {
 
     // let results = await Book.find(queryObject);
     res.status(200).send(results);
-    console.log('results', results);
+    console.log('results from getBooks: ', results);
   } catch(error){
     console.log('error', error);
     next(error);
@@ -54,14 +55,25 @@ async function getBooks(req, res, next) {
 }
 
 async function postBooks(req, res, next) {
-
   console.log(req.body, 'here is body');
   try{
     let createdBook = await Book.create(req.body);
     res.status(200).send(createdBook);
   }
-
   catch(error){
+    next(error);
+  }
+}
+
+async function deleteBooks(request, response, next) {
+  let id = request.params.id;
+  // console.log('greetings from deleteBooksbackend ', id);
+  
+  try {
+    await Book.findByIdAndDelete(id);
+    // await Book.findByIdAndDelete({_id: id});
+    response.send('book deleted');
+  } catch(error) {
     next(error);
   }
 }
