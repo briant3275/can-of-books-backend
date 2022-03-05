@@ -34,12 +34,13 @@ app.get('/', (req, res) => {
 
 app.get('/books', getBooks);
 app.post('/books', postBooks);
-app.delete('/books', deleteBooks); //1:28 March 2
+app.delete('/books/:id', deleteBooks);
+app.put('/books/:id', putBooks);
 
 async function getBooks(req, res, next) {
   try {
     // maybe for your lab???  why???
-    let results = await Book.find({email: req.query.email});
+    let results = await Book.find({ email: req.query.email });
     // let queryObject = {};
     // if(req.query.email) {
     //   let queryObject.email = req.query.email;
@@ -48,7 +49,7 @@ async function getBooks(req, res, next) {
     // let results = await Book.find(queryObject);
     res.status(200).send(results);
     console.log('results from getBooks: ', results);
-  } catch(error){
+  } catch (error) {
     console.log('error', error);
     next(error);
   }
@@ -56,11 +57,11 @@ async function getBooks(req, res, next) {
 
 async function postBooks(req, res, next) {
   console.log(req.body, 'here is body');
-  try{
+  try {
     let createdBook = await Book.create(req.body);
     res.status(200).send(createdBook);
   }
-  catch(error){
+  catch (error) {
     next(error);
   }
 }
@@ -68,12 +69,24 @@ async function postBooks(req, res, next) {
 async function deleteBooks(request, response, next) {
   let id = request.params.id;
   // console.log('greetings from deleteBooksbackend ', id);
-  
+
   try {
     await Book.findByIdAndDelete(id);
     // await Book.findByIdAndDelete({_id: id});
-    response.send('book deleted');
-  } catch(error) {
+    response.status(200).send('book deleted');
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function putBooks(request, response, next) {
+  let id = request.params.id;
+  // console.log('greetings from deleteBooksbackend ', id);
+  try {
+
+    let updatedBook = await Book.findByIdAndUpdate(id, request.body, { new: true, overwrite: true });
+    response.status(200).send(updatedBook);
+  } catch (error) {
     next(error);
   }
 }
