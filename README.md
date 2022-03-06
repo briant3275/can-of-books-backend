@@ -1,20 +1,22 @@
 # Project Name "Can of Books"
 
-### Lab 12
+### Lab 12, Lab 13
 
 (https://trello.com/b/LFy4MWG2/book-lab)
 
-**Version**: 1.8.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 2.2.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 **Author**: Brian Thornburg, Harvey Francois, Rey Mercado
 
 ## Overview
-Today you will add the functionality for the user to create a book resource in the database or delete one. A book will be created from a form in React, and sent to the server where it will be saved into the database, and then returned to the front end to be displayed in the list of favorite books. You will then be able to delete that book with a click of a button, to have it instantly removed from the front end, with a request sent to back end for removal.
-
-Feature Tasks - CREATE and DELETE of CRUD
+Lab 12 - Today you will add the functionality for the user to create a book resource in the database or delete one. A book will be created from a form in React, and sent to the server where it will be saved into the database, and then returned to the front end to be displayed in the list of favorite books. You will then be able to delete that book with a click of a button, to have it instantly removed from the front end, with a request sent to back end for removal.
+- Feature Tasks - CREATE and DELETE of CRUD
 See your team’s Trello board for this lab’s feature tasks.
 
  
+Lab 13 - Update a Resource
+Today you will complete your full stack CRUD application by adding an UPDATE route. You will add a button to each book that, when clicked, will display a form where the user can change information about that book. That information will be sent to the server where it will replace what’s already in the database for that record.
+- Feature Tasks — UPDATE of CRUD
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 This repository has starter code to begin work on creating your own online bookshelf.
@@ -36,35 +38,54 @@ Clone this repo to your own account with the green "Use this template" button. T
 ## Change Log
 Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-03-01-2022 10:15pm - Change feature in progress.
-03-02-2022 8:45p - Change feature complete. began work on Delete feature.
+- 03-01-2022 10:15pm - Change feature in progress.
+- 03-02-2022 8:45p - Change feature complete. began work on Delete feature.
+- 03-02-2022 9:45p - Delete incomplete.
+- 03-05-2022 2:48 - Delete complete (Lab 12 complete)
+- 03-05-2022 4:25 - Update complete (Lab 13 complete)
 
 ## Estimates
 
-Name of feature: create 
+-- Name of feature: Create - Lab 12 
+- Estimate of time needed to complete: 2hr
+- Start time: 8pm
+- Pause time: 10:15pm
+- Continue time: 2pm March 2
+- Pause time: 4pm March 2
+- Continue time: 7pm March 2
+- End time: 845pm March 2
+- Actual time needed to complete: 2.25 + 2 + 1.75 = 6hrs
 
-Estimate of time needed to complete: 2hr
 
-Start time: 8pm
+-- Name of feature: Delete - Lab 12
+- Estimate of time needed to complete: 2hrs
+- Start time: 8:45pm March2
+- End time: 9:50pm march2
+- Continue time: 2pm March 5
+- End time: 2:48pm
+- Actual time: 2hrs
 
-Pause time: 10:15pm
-Continue time: 2pm March 2
-Pause time: 4pm March 2
-Continue time: 7pm March 2
-End time: 845pm March 2
-Actual time needed to complete: 2.25 + 2 + 1.75 = 6hrs
+-- Name of Feature: Update - Lab 13
+- Estimate time needed to complete: 2hrs
+- Start time: 2:48pm March 5
+- End time: 4:25pm March 5
+- Actual time: 1:37min
 
-Name of feature: Delete
-Estimate of time needed to complete: 2hrs
-Start time: 8:45pm March2
-End time: 9:50pm march2
-Actual time:1hr 5min
+
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-Ryan Callaway: helped debug eslinter issues
-Cassie Bradshaw: helped debug error in the bootstrap Form.Check component
+Ryan Callaway: helped get unstuck Delete and Update on Mar 5
+
+## Other remarks
+
+- Brian still as of Mar 5 has trouble of MongoDB authorization in order to connect back end to front-server. 
+  - Ryan and Ta Will tried to troubleshoot but unsuccessful.
+- .env continued to persist on github on backend when ACPing. TA Kassie Bradshaw helped delete .env on github.
+- Harvey has unusual stricter linter issues remaining unresolved.  Ryan said to fix when possible.
+
+
 
 ## Process: Professional Pairing Practice
 
@@ -73,78 +94,80 @@ Before you begin to even think about your application, take at least 30 minutes 
 
 ### Logistical
 
-What hours will you be available to communicate?
-Brian is in Central and finishes 11pm Pacific Time (1am central) usually
-Brian is available after lunch hour to 4, has a break 4-6pm Pacific Time, but is around after 6pm until 11pm PST, and usually not available until 9am start of class
-Harvey is available anytime to communicate on slack
-Rey is available anytime except for dinner 6pm-730pm, though can shorten this if needed. Mornings am available starting 6am.  Late night depends after 10pm, can go longer if needed.
-What platform will you use to communicate (ie. Slack, phone …)?
-Brian prefers using slack, then email if slack not getting a response
-Rey prefers slack first, then email if slack not getting a response
-Harvey :  “Slack works for me.”
-How often will you take breaks?
-Rey can take a 10min break every hour or 10 min every two hours
-Breaks every hour for 10 min.
-What is your plan if you start to fall behind?
-Ask TA’s for advice/assistance
-Timely communication with group members
-If needed ask Ryan
-Possibly shorten or forego breaks per group agreement
+#### What hours will you be available to communicate?
+- Brian is in Central and finishes 11pm Pacific Time (1am central) usually
+- Brian is available after lunch hour to 4, has a break 4-6pm Pacific Time, but is around after 6pm until 11pm PST, and usually not available until 9am start of class
+- Harvey is available anytime to communicate on slack
+- Rey is available anytime except for dinner 6pm-730pm, though can shorten this if needed. Mornings am available starting 6am.  Late night depends after 10pm, can go longer if needed.
+### What platform will you use to communicate (ie. Slack, phone …)?
+- Brian prefers using slack, then email if slack not getting a response
+- Rey prefers slack first, then email if slack not getting a response
+- Harvey :  “Slack works for me.”
+### How often will you take breaks?
+- Rey can take a 10min break every hour or 10 min every two hours
+- Breaks every hour for 10 min.
+### What is your plan if you start to fall behind?
+- Ask TA’s for advice/assistance
+- Timely communication with group members
+- If needed ask Ryan
+- Possibly shorten or forego breaks per group agreement
 
 ### Cooperative
 
-Make a list of each person’s strengths.
-Rey
-Good at referring to docs
-Good at facilitating communication
+### Make a list of each person’s strengths.
+- Rey
+    - Good at referring to docs
+    - Good at facilitating communication
 
-Harvey: 
-“Not sure what my strengths are. I’ll let you know when I figure it out.” 
-Sense of humor
-Brian:
-Styling, front-end design
-Timeboxing daily schedule
-Calm demeanor, good for team morale
-Good at making an effort
-How can you best utilize these strengths in the development of your application?
-Harvey: 
-“Keeping everyone motivated. If I have to, I’ll start cracking the whip.”
-Rey: 
-Can keep other members informed of where we are and send friendly reminders of upcoming tasks
-Cite docs
-Keeping one’s self on track 
-Brian:
-Can facilitate making a schedule for the day
-Can work on styling
-In what areas do you each want to develop greater strength?
-Harvey: 
-“Understand the material.”
-Brian:
-Debugging
-General server and database knowledge
-Get more of a feel for working in teamsMee
-Rey
-Timeboxing, 
-Improving overall knowledge and speed to finish tasks sooner
-Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?
-“Pair programming, everyone gets a turn. ”-plan with 3 people is only one still drives… one is primary navigator, and one is secondary navigator- alternate once an hour on average or at logical end of task
-Team meeting at start and end of day where we address what each has done, if there is anything we didn’t get to, clarification on things, what the plan is to do next. A few minutes for each person.
+- Harvey: 
+  - “Not sure what my strengths are. I’ll let you know when I figure it out.” 
+  - Sense of humor
+- Brian:
+  - Styling, front-end design
+- Timeboxing daily schedule
+- Timeboxing daily schedule
+- Calm demeanor, good for team morale
+- Good at making an effort
+- How can you best utilize these strengths in the development of your application?
+- Harvey: 
+- “Keeping everyone motivated. If I have to, I’ll start cracking the whip.”
+- Rey: 
+- Can keep other members informed of where we are and send friendly reminders of upcoming tasks
+- Cite docs
+- Keeping one’s self on track 
+- Brian:
+- Can facilitate making a schedule for the day
+- Can work on styling
+- In what areas do you each want to develop greater strength?
+- Harvey: 
+- “Understand the material.”
+- Brian:
+- Debugging
+- General server and database knowledge
+- Get more of a feel for working in teamsMee
+- Rey
+- Timeboxing, 
+- Improving overall knowledge and speed to finish tasks sooner
+- Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?
+- “Pair programming, everyone gets a turn. ”-plan with 3 people is only one still drives… one is primary navigator, and one is secondary navigator- alternate once an hour on average or at logical end of task
+- Team meeting at start and end of day where we address what each has done, if there is anything we didn’t get to, clarification on things, what the plan is to do next. A few minutes for each person.
 
 ### Conflict Resolution
 
--What will your team do if one person is pulling all the weight while the other person is not contributing?
-“Slap some sense into the other person and tell them to get it together.”-Harvey
-Call for emergency group meeting to problem solve issue
-If needed we can contact Ryan
+- What will your team do if one person is pulling all the weight while the other person is not contributing?
+  - “Slap some sense into the other person and tell them to get it together.”-Harvey
+  - Call for emergency group meeting to problem solve issue
+  - If needed we can contact Ryan
 Maintain judgment-free space
 Make sure person who is causing the issue is informed by the other members letting him know
 
--What will your team do if one person is taking over the project and not letting the other member contribute?
-“I will say if you want to do the entire project, go ahead.” - Harvey
+- What will your team do if one person is taking over the project and not letting the other member contribute?
+“I will say if you want to do the entire project, go ahead.” 
+- Harvey
 Call for emergency group meeting to problem solve issue
 Make sure person who is causing the issue is informed by the other members letting him know
 
--How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
+- How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
 “I’m not the best at react so I'm going to need the help.” - Harvey 
 Seek advice of instructor and/or ta on how to mitigate
 Promise to be patient to each other
